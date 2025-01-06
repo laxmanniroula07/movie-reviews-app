@@ -6,6 +6,7 @@ body {
 
 .home, .movie-details {
   padding: 20px;
+  display: block;
 }
 
 .movie-list {
@@ -17,6 +18,7 @@ body {
 .movie-card {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
 .movie-card img {
@@ -24,6 +26,7 @@ body {
   height: 300px;
   object-fit: cover;
   border-radius: 10px;
+  
 }
 
 .movie-card h3 {

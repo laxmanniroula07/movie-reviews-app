@@ -1,13 +1,16 @@
-
-import './App.scss';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import MovieDetails from "./Components/MovieDetails";
 
 function App() {
   return (
-      
-    <h1> app is the main rtis fjdfbbbjnvjhjvcn hvcbgcvhvjhxjhv</h1>
-    
-        
-  
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/movie/:id" element={<MovieDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
